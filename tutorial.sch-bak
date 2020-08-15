@@ -386,4 +386,72 @@ F 3 "~" H 7550 4400 50  0001 C CNN
 	1    7550 4400
 	0    1    1    0   
 $EndComp
+$Comp
+L random-keyboard-parts:Molex-0548190589 USB?
+U 1 1 5F3A7983
+P 8350 1850
+F 0 "USB?" V 8887 1817 60  0000 C CNN
+F 1 "Molex-0548190589" V 8781 1817 60  0000 C CNN
+F 2 "" H 8350 1850 60  0001 C CNN
+F 3 "" H 8350 1850 60  0001 C CNN
+	1    8350 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F3A8DEB
+P 9100 1650
+F 0 "#PWR?" H 9100 1500 50  0001 C CNN
+F 1 "VCC" H 9115 1823 50  0000 C CNN
+F 2 "" H 9100 1650 50  0001 C CNN
+F 3 "" H 9100 1650 50  0001 C CNN
+	1    9100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5F3AA1DA
+P 9500 1650
+F 0 "F?" V 9295 1650 50  0000 C CNN
+F 1 "500mA" V 9386 1650 50  0000 C CNN
+F 2 "" H 9550 1450 50  0001 L CNN
+F 3 "~" H 9500 1650 50  0001 C CNN
+	1    9500 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3AADB2
+P 9850 1650
+F 0 "#PWR?" H 9850 1500 50  0001 C CNN
+F 1 "+5V" H 9865 1823 50  0000 C CNN
+F 2 "" H 9850 1650 50  0001 C CNN
+F 3 "" H 9850 1650 50  0001 C CNN
+	1    9850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1650 9100 1650
+Connection ~ 9100 1650
+Wire Wire Line
+	9100 1650 9400 1650
+Wire Wire Line
+	9600 1650 9850 1650
+Text GLabel 8650 1750 2    50   Input ~ 0
+D-
+Text GLabel 8650 1850 2    50   Input ~ 0
+D+
+$Comp
+L power:GND #PWR?
+U 1 1 5F3AE84A
+P 8750 2050
+F 0 "#PWR?" H 8750 1800 50  0001 C CNN
+F 1 "GND" H 8755 1877 50  0000 C CNN
+F 2 "" H 8750 2050 50  0001 C CNN
+F 3 "" H 8750 2050 50  0001 C CNN
+	1    8750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2050 8750 2050
 $EndSCHEMATC
