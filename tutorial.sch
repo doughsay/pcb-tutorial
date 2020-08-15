@@ -421,7 +421,6 @@ NoConn ~ 6550 4900
 NoConn ~ 6550 4800
 NoConn ~ 6550 4700
 NoConn ~ 6550 4500
-NoConn ~ 6550 4200
 NoConn ~ 6550 4100
 NoConn ~ 6550 4000
 NoConn ~ 6550 3900
@@ -432,9 +431,6 @@ NoConn ~ 6550 3500
 NoConn ~ 6550 3300
 NoConn ~ 6550 3200
 NoConn ~ 6550 3000
-NoConn ~ 6550 2900
-NoConn ~ 6550 2800
-NoConn ~ 6550 2700
 NoConn ~ 6550 2600
 NoConn ~ 6550 2500
 NoConn ~ 6550 2400
@@ -589,11 +585,11 @@ $EndComp
 Wire Wire Line
 	8650 1650 9050 1650
 $Comp
-L power:+5V #PWR0111
-U 1 1 5F3DD71F
+L power:VCC #PWR?
+U 1 1 5F3E01DE
 P 9050 1650
-F 0 "#PWR0111" H 9050 1500 50  0001 C CNN
-F 1 "+5V" H 9065 1823 50  0000 C CNN
+F 0 "#PWR?" H 9050 1500 50  0001 C CNN
+F 1 "VCC" H 9065 1823 50  0000 C CNN
 F 2 "" H 9050 1650 50  0001 C CNN
 F 3 "" H 9050 1650 50  0001 C CNN
 	1    9050 1650
@@ -602,4 +598,12 @@ $EndComp
 Connection ~ 9050 1650
 Wire Wire Line
 	9050 1650 9400 1650
+Text GLabel 6550 4200 2    50   Input ~ 0
+ROW0
+Text GLabel 6550 2900 2    50   Input ~ 0
+ROW1
+Text GLabel 6550 2700 2    50   Input ~ 0
+COL1
+Text GLabel 6550 2800 2    50   Input ~ 0
+COL0
 $EndSCHEMATC
